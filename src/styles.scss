@@ -1,0 +1,28 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	
+}
+/* body{
+	margin-bottom: 10%;
+} */
+
+footer{
+	width:100%;
+	background-color: dimgray;
+	height:auto;
+	min-height: 50px;
+	padding: 1% 37%;
+}
+
+footer p{
+	color: whitesmoke;
+	text-align: center;
+}
+
+@media(max-width:768px){
+	footer{
+	padding: 5% 24%;
+}
+}

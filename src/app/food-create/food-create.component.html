@@ -1,0 +1,62 @@
+<div class="container main">
+  <div class="heading">
+    <h1>Welcome, Upload your own recipe and help build this site</h1>
+  </div>
+    <form #createRecipeForm="ngForm" (ngSubmit)="createRecipe()">
+      <div class="form-container">
+        <div class="row" >
+          <div class="form-group col">
+          <label>Recipe Name</label>
+          
+          <input type="text" name="recipeName" [(ngModel)]="recipeName" #name="ngModel" class="form-control" required >
+        
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          Recipe Name is required
+          </div>
+        </div>
+        <div class="form-group col">
+          <label>Author Name</label>
+          <input type="text" name="authorName" [(ngModel)]="authorName" #author="ngModel" class="form-control" placeholder="Your Name" required> 
+          <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+            Author Name is required
+          </div>
+        </div>
+        </div>
+      <div class="form-group">
+        <label>Recipe Description</label>
+        <input type="text" name="recipeDescription" [(ngModel)]="recipeDescription" #description="ngModel" class="form-control" required >
+        <small>Eg: Pulao would be 'finely cooked vegetables with long grain rice'</small>
+      </div>
+      <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+        Recipe Description is required
+      </div>
+      <div class="form-group">
+        <label>Recipe Image</label>
+        <input type="text" name="recipeImage" [(ngModel)]="recipeImage" #image="ngModel" class="form-control" required >
+      </div>
+      <div [hidden]="image.valid || image.pristine" class="alert alert-danger">
+        Recipe Image is required
+      </div>
+      <div class="form-group">
+        <label>Recipe Ingredients</label>
+        <textarea type="text" name="recipeIngredients" [(ngModel)]="recipeIngredients" #ingredients="ngModel" class="form-control" rows="10" required >
+        </textarea>
+        <small>Please use one line for each ingredient</small>
+      </div>
+      <div [hidden]="ingredients.valid || ingredients.pristine" class="alert alert-danger">
+        Recipe Ingredients is required
+      </div>
+      <div class="form-group">
+        <label>Recipe Instructions</label>
+        <textarea name="recipeInstructions" [(ngModel)]="recipeInstructions" #instructions="ngModel" class="form-control" rows="10" required>
+        </textarea>
+        <small>Please use one line for each instruction</small>
+      </div>
+      <div [hidden]="instructions.valid || instructions.pristine" class="alert alert-danger">
+        Recipe Instructions is required
+      </div>
+      
+      <button type="submit" class="btn btn-primary" [disabled]="!createRecipeForm.form.valid">Submit</button>
+      </div>
+    </form>
+</div>

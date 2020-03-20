@@ -1,0 +1,13 @@
+<div class="main">
+  <div class="food-cards" *ngIf="foods; else elseblock">
+    <a class="card" *ngFor="let food of foods" [routerLink]="['/view',food.recipeId]">
+      <img [src]="food.image" [alt]="food.name">
+      <div class="container">
+        <h5>{{food.name}}</h5>
+        <p>{{food.description}}</p>
+      </div>
+    </a>
+    
+  </div>
+  <ng-template #elseblock>Some error occured</ng-template>
+</div>

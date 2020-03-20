@@ -1,0 +1,33 @@
+[{
+    "name":"Biriyani",
+    "price":"151.25",
+    "image":"https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+    "description":"finely cooked meat with long grain rice"
+},
+{
+    "name":"Pulao",
+    "price":"101.25",
+    "image":"https://images.pexels.com/photos/723198/pexels-photo-723198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "description":"finely cooked vegetables with long grain rice"
+},
+
+{
+    "name":"Butter Chicken",
+    "price":"181.25",
+    "image":"https://image.shutterstock.com/z/stock-photo-butter-chicken-indian-cuisine-88284652.jpg",
+    "description":"One of indias main course dish made with butter and juicy meat"
+},
+
+{
+    "name":"Dosa",
+    "price":"90.25",
+    "image":"https://images.pexels.com/photos/221143/pexels-photo-221143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "description":"Sout Indias popular dish made with rice"
+},
+
+{
+    "name":"Veg Thali",
+    "price":"200.25",
+    "image":"https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "description":"A mix of indian breads and rice with gravy"
+}]

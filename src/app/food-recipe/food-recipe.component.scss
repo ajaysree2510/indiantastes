@@ -1,0 +1,56 @@
+.container{
+    width: 90%;
+    margin: auto;
+    background-color:beige;
+    display:flex;
+    justify-content: space-between;
+    height: auto;
+    
+}
+
+.container ul{
+    margin: 0 5%;
+    font-size: large;
+    line-height: 30px;
+}
+
+.image img{
+    width: 300px;
+    margin: 10px 10px;
+    height:300px;    
+}
+
+.text-content{
+    margin: 10px 30px;
+    text-align: justify;
+}
+
+h3{
+    text-decoration: underline;
+    margin: 2% 0;
+}
+
+
+
+p{
+    margin-bottom: 5%;
+    line-height: 30px;
+}
+@media screen and (max-width:800px){
+    .container{
+        flex-direction: column;
+        width: 98%;
+    }
+    .image img{
+        padding: 2% 2%;
+        margin: 0px;
+        width: 100%;
+        height: auto;
+        max-height: 35rem;
+    }
+
+    .text-content h1{
+        text-align: center;
+        margin:5% 0;
+    }
+}

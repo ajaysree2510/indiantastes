@@ -1,0 +1,82 @@
+//custom
+
+
+.main{
+  margin-bottom: 10%;;
+}
+.form-container{
+  padding:0 7%;
+}
+
+.ng-valid[required], .ng-valid.required {
+  border-left: 5px solid #42A948;
+}
+
+.ng-invalid:not(form) {
+  border-left: 5px solid #a94442;
+}
+
+/* .two-cols{
+  display:flex ;
+  justify-content: space-between;
+  
+}
+.two-cols input{
+  width: 49%;
+  margin-top: 30px;
+  margin-left: -30%;
+  margin-bottom: 10px;
+
+}
+.two-cols label{
+  width: 28%;
+}
+
+.two-cols .alert{
+  margin-top: 70px;
+  position: absolute;
+} */
+.heading h1{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: rgb(219, 52, 52);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 103, 11, 0.988) 44%,
+    rgb(0, 81, 255) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3rem;
+  }
+
+  .row p{
+    margin-top: 0px;
+    color: darkred;
+    font-size: 14px;
+  }
+
+  .btn:disabled{
+    color: #fff;
+    background-color: gray;
+    border-color: gray;
+  }
+
+  .row input{
+    margin-bottom: 15px;
+  }
+
+  label{
+    font-weight: 600;
+  }
+//custom
+
+
+@media (max-width:768px){
+
+  .row{
+    flex-direction: column;
+  }
+}

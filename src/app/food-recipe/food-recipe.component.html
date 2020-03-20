@@ -1,0 +1,19 @@
+<div class="main">
+  <div class="container" *ngIf="currentRecipe; else elseBlock">
+    <div class="image">
+      <img [src]="currentRecipe.image" [alt]="Nothing">
+    </div>
+    <div class="text-content">
+      <h1>{{currentRecipe.name}}</h1>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li *ngFor="let x of currentRecipe.ingredients">
+          {{x}}
+        </li>
+      </ul>
+      <h3>Instructions:</h3>
+      <p>{{currentRecipe.instructions}} </p>
+    </div>
+  </div>
+  <ng-template #elseBlock>Sorry some error occured</ng-template>
+</div>
