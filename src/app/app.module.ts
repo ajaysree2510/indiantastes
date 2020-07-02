@@ -14,6 +14,7 @@ import { FoodRecipeComponent } from './food-recipe/food-recipe.component';
 import { FoodCreateComponent } from './food-create/food-create.component';
 
 import {FormsModule} from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import {FormsModule} from '@angular/forms';
     HeaderComponent,
     FoodListComponent,
     FoodRecipeComponent,
-    FoodCreateComponent
+    FoodCreateComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import {FormsModule} from '@angular/forms';
       {path:'home', component:FoodListComponent },
       {path:'', redirectTo:'home', pathMatch:'full'},
       {path:'view/:recipeId', component:FoodRecipeComponent},
-      {path:'createRecipe', component:FoodCreateComponent}
+      {path:'createRecipe', component:FoodCreateComponent},
+      {path:'contact', component: ContactComponent}
     ]),
     FormsModule
   ],
