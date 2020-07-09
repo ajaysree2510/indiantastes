@@ -15,6 +15,11 @@ import { FoodCreateComponent } from './food-create/food-create.component';
 
 import {FormsModule} from '@angular/forms';
 import { ContactComponent } from './contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import { MatProgressSpinner, MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +34,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatProgressSpinnerModule,
     RouterModule.forRoot([
       {path:'home', component:FoodListComponent },
       {path:'', redirectTo:'home', pathMatch:'full'},
@@ -36,9 +42,12 @@ import { ContactComponent } from './contact/contact.component';
       {path:'createRecipe', component:FoodCreateComponent},
       {path:'contact', component: ContactComponent}
     ]),
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
-  providers: [FoodService],
+  providers: [FoodService,
+    { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

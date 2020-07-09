@@ -4,6 +4,7 @@ const navSlide = ()=>{
     const nav= document.querySelector('.nav-links');
     const navLinks= document.querySelectorAll('.nav-links li')
 
+
     burger.addEventListener('click', ()=>{
 
         //toggle burger
@@ -20,7 +21,26 @@ const navSlide = ()=>{
 
         burger.classList.toggle('toggle');
 
+
     });
+
+
+    
 }
+const navUl= document.querySelectorAll('nav ul')
+
+
+document.addEventListener('click',()=>{
+    console.log('document clicked')
+
+ var navClass=  document.getElementById('navigate').className;
+ console.log(navClass)
+    if(navClass==='nav-links nav-active'){
+        console.log("Navigation active")
+        
+        document.getElementById('navigate').className= 'nav-links';
+    }
+})
+
 
 navSlide();

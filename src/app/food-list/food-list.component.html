@@ -13,5 +13,17 @@
     
     
   </div>
-  <ng-template #elseblock>Some error occured</ng-template>
+  <ng-template #elseblock>
+    <div class="spinner">
+      <mat-progress-spinner
+      [color]="color"
+      [mode]="mode"
+      [diameter]="120"
+      style="margin:auto;"
+      >
+  </mat-progress-spinner>
+  <p>Loading...</p>
+    </div>
+    
+  </ng-template>
 </div>

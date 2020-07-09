@@ -34,6 +34,13 @@
  object-position: center;
 }
 
+.spinner p{
+  text-align: center;
+  margin: 40px;
+  font-size: xx-large;
+  font-family: "Lobster", cursive;
+  color: crimson;
+}
 .card .container{
   padding: 2%;
 }
@@ -41,6 +48,11 @@
 a{
   text-decoration: none;
   color: black;
+}
+
+mat-progress-spinner svg{
+  height: 150px;
+  width:150px;
 }
 
 @media (max-width:768px){

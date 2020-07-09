@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../food.service';
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
+import { ThemePalette } from "@angular/material/core";
+
+
 
 @Component({
   selector: 'app-food-list',
@@ -8,7 +12,10 @@ import { FoodService } from '../food.service';
 })
 export class FoodListComponent implements OnInit {
 
-  public foods = [ ]
+  color: ThemePalette = "warn";
+  mode: ProgressSpinnerMode = "indeterminate";
+
+  public foods:[]=null
   constructor(private foodService:FoodService) { }
 
   ngOnInit() {
@@ -20,6 +27,7 @@ export class FoodListComponent implements OnInit {
       },
       err=>{
         console.log(err);
+        this.foods=null;
       }
     )
   }
